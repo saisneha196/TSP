@@ -1,0 +1,49 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSP Solver</title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traveling Salesman Problem Solver</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Traveling Salesman Problem Solver</h1>
+        </header>
+        <main>
+            <section id="input-section">
+                <h2>Solve the TSP</h2>
+                <form id="tsp-form">
+                    <label for="matrix">Enter the adjacency matrix:</label>
+                    <textarea id="matrix" name="matrix" rows="5" placeholder="Enter matrix (e.g., 0,29,20,21\n29,0,15,17\n20,15,0,28\n21,17,28,0)" required></textarea>
+                    <button type="submit">Solve TSP</button>
+                </form>
+            </section>
+            <section id="results-section" style="display: none;">
+                <h2>Results</h2>
+                <div id="results"></div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+</head>
+<body>
+    <h1>Traveling Salesman Problem Solver</h1>
+    <form id="tsp-form">
+        <textarea id="matrix" rows="10" cols="30" placeholder="Enter adjacency matrix (comma separated)"></textarea>
+        <br>
+        <button type="submit">Solve TSP</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
